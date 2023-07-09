@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: url(/images/about_us_back_img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+/* about css starts */
+
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .content {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .content img {
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.about .content .text {
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.about .content .text h1 {
+    color: #ffcc74;
+    font-size: 70px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.about .content .text h4 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.about .content .text p {
+    color: #c0c4d6;
+    font-size: 18px;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.about .content .text button {
+    background: rgb(243, 78, 105);
+    color: white;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.about .content .text button:hover {
+    transform: scale(1.2);
+    background: transparent;
+    border: 2px solid #ffcc74;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1180px) {
+    .about {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .about .content img {
+        margin-bottom: 35px;
+    }
+
+    .about .content .text h1 {
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+}
+
+/* about css ends */
+
+
+
+
+
+
+
+
+
+
+
+
+/* services css starts */
+.services .heading {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    /* padding-top: 5px; */
+    color: white;
+}
+
+
+.services .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services .box-container .box {
+    flex: 1 1 30rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.services .box-container .box i {
+    padding: 1rem;
+    font-size: 3rem;
+    color: #ffcc74;
+}
+
+.services .box-container .box h3 {
+    font-size: 2rem;
+    color: #ffcc74;
+}
+
+.services .box-container .box p {
+    font-size: 1rem;
+    padding: 1rem 0;
+    color: white;
+}
+
+.services .box-container .box:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .9);
+}
+
+/* services css ends */
+
+
+
+
+
+/* Footer Start */
+
+footer{
+    width: 100%;
+    position: static;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+
+.logo{
+    width: 180px;
+    margin-bottom: 30px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .fa-regular{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fa-solid{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
+
+
+@media(max-width:700px){
+    footer{
+        bottom: unset;
+    }
+
+    .col{
+        flex-basis: 100%;
+    }
+    
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
+
+/* Footer End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
